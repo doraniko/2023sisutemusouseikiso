@@ -14,11 +14,11 @@ int main(void)
 
 	if (surplus == 0)
 	{
-		printf("偶数", a, b, result);
+		printf("偶数");
 	}
 	else
 	{
-		printf("奇数", a, b, result ,surplus);
+		printf("奇数");
 	}
 
 	return 0;
