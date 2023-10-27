@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(void)
+{
+	int a, b, surplus, result;
+
+	printf("Number=");
+	scanf_s("%d", &a);
+
+	b = 2;
+
+	surplus = a % b;
+	result = a / b;
+
+	if (surplus == 0)
+	{
+		printf("偶数", a, b, result);
+	}
+	else
+	{
+		printf("奇数", a, b, result ,surplus);
+	}
+
+	return 0;
+}
