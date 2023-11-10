@@ -8,11 +8,11 @@ int main(void)
 	{
 		if (i % 221 == 0)
 		{
-			printf("%8d\n", i);
+			printf("%12d\n", i);
 		}
 		else if (i % 17 == 0)
 		{
-			printf("%d\n", i);
+			printf("%8d\n", i);
 		}
 		else if (i % 13 == 0)
                 {
