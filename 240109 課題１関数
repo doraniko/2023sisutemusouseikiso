@@ -1,0 +1,43 @@
+#include <math.h>
+#include <stdio.h>
+
+int main(void)
+{
+    double a, b, c, D, x1, x2;
+    
+    printf("a=");
+    scanf("%lf", &a);
+    printf("b=");
+    scanf("%lf", &b);
+    printf("c=");
+    scanf("%lf", &c);
+    
+    if (a == 0.0)
+    {
+        printf("再入力　a=");
+        scanf("%lf", &a);
+    }
+    
+    D = b * b - 4 * a * c;
+    x1 = (-b + sqrt(D)) / (2 * a);
+    x2 = (-b - sqrt(D)) / (2 * a);
+    
+    if (D >= 0.0)
+    {
+        if (D == 0.0)
+        {
+            printf("解は重解となるので、%gです。 \n", x1);
+        }
+        else
+        {
+            printf("解は、%gと%gです。 \n", x1, x2);
+        }
+    }
+    else
+    {
+        printf("虚数解となるので解はない。 \n");
+    }
+    
+    return 0;
+    
+}
